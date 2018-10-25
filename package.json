@@ -1,0 +1,19 @@
+{
+    "name": "argmining19.webis.de",
+    "version": "1.0.0",
+    "main": "_layouts/index.html",
+    "author": "Roxanne El Baff",
+    "license": "MIT",
+    "dependencies": {
+      "@fortawesome/fontawesome-free": "^5.2.0",
+      "datatables.net-dt": "^1.10.19",
+      "jquery": "^3.3.1",
+      "uikit": "dev"
+    },
+    "devDependencies": {},
+    "repository": {
+      "type": "git",
+      "url": " "
+    }
+  }
+  
