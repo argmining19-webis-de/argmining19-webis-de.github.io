@@ -6,7 +6,7 @@
     <meta name="description" content="{{ page.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="copyright" content="&copy; {{site.time | date: '%Y'}} Webis">
-    <link rel="icon" type="image/png" href="{{ '/img/favicon.png' | relative_url }}">
+    <link rel="icon" type="image/png" href="{{ '/img/favicon.jpg' | relative_url }}">
 
     <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}?{{site.time | date: '%s'}}">
     {%- for css in page.additional_css %}
@@ -17,6 +17,18 @@
 <script src="{{ '/js/thirdparty/uikit/uikit.min.js' | relative_url }}"></script>
 <script src="{{ '/js/thirdparty/uikit/uikit-icons.min.js' | relative_url }}"></script>
 
+
+
+
+<main class="uk-section uk-cover-container index-main-cover">
+    <div class="cover-background-fade"></div>
+    <div class="uk-container uk-position-bottom uk-light uk-padding">
+        <h1>6th Workshop on Argument Mining</h1>
+        <h2>EMNLP 2019</h2>
+        
+    </div>
+</main>
+        
 <div id="offcanvas-nav" class="uk-hidden@m" data-uk-offcanvas="overlay: true; flip: true;">
     <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type="button" data-uk-close></button>
@@ -24,9 +36,16 @@
         <!-- Mobile navigation -->
         <nav class="uk-margin-large-top">
             <ul class="uk-nav uk-nav-primary uk-nav-parent-icon" data-uk-nav>
+                    <li>
+                            <a target="_blank" href="https://webis.de"><img src="{{ '/img/webis-logo.png' | relative_url }}" alt="Webis Logo" class="uk-logo"> Webis.de</a>
+                    </li>
+                <li{% if page.nav_active == "index" %} class="uk-active"{% endif %}>
+                        <a href="{{ '/' | relative_url }}">Argmining 2019 Overview</a>
+                    </li>
                 <li{% if page.nav_active == "important-dates" %} class="uk-active"{% endif %}>
                     <a href="{{ '/important-dates.html' | relative_url }}">Important Dates</a>
                 </li>
+                
                 
                 <li{% if page.nav_active == "program" %} class="uk-active"{% endif %}>
                     <a href="{{ '/program.html' | relative_url }}">Program</a>
@@ -38,8 +57,10 @@
                     <a href="{{ '/past-workshops.html' | relative_url }}">Past Workshops</a>
                 </li>
                 <li{% if page.nav_active == "acl-anti-harassement" %} class="uk-active"{% endif %}>
-                    <a href="{{ '/acl-anti-harassement.html' | relative_url }}">ACL Anti-Harassement Policy</a>
+                    <a href="{{ '/acl-anti-harassement.html' | relative_url }}">Policy</a>
                 </li>
+
+               
             </ul>
         </nav>
     </div>
@@ -50,9 +71,13 @@
     <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-light" data-uk-navbar="mode: click">
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
-                <li{% if page.nav_active == "index" %} class="uk-active"{% endif %}>
-                    <a href="{{ '/' | relative_url }}"><img src="{{ '/img/webis-logo.png' | relative_url }}" alt="Webis Logo" class="uk-logo"> Webis.de</a>
+                <li>
+                        <a target="_blank" href="https://webis.de"><img src="{{ '/img/webis-logo.png' | relative_url }}" alt="Webis Logo" class="uk-logo"> Webis.de</a>
                 </li>
+                <li{% if page.nav_active == "index" %} class="uk-active"{% endif %}>
+                        <a href="{{ '/' | relative_url }}">Argmining 2019 Overview</a>
+                    </li>
+                
                 <li{% if page.nav_active == "important-dates" %} class="uk-active"{% endif %}>
                     <a href="{{ '/important-dates.html' | relative_url }}">Important Dates</a>
                 </li>
@@ -67,7 +92,7 @@
                     <a href="{{ '/past-workshops.html' | relative_url }}">Past Workshops</a>
                 </li>
                 <li{% if page.nav_active == "acl-anti-harassement" %} class="uk-active"{% endif %}>
-                    <a href="{{ '/acl-anti-harassement.html' | relative_url }}">ACL Anti-Harassement Policy</a>
+                    <a href="{{ '/acl-anti-harassement.html' | relative_url }}">Policy</a>
                 </li>
             </ul>
         </div>
@@ -78,9 +103,10 @@
     <div class="uk-navbar-container uk-navbar-transparent uk-container uk-light mobile-nav-toggle" data-uk-navbar>
         <div class="">
             <ul class="uk-navbar-nav">
+            
                 <li{% if page.nav_active == "index" %} class="uk-active"{% endif %}>
-                    <a href="{{ '/' | relative_url }}"><img src="{{ '/img/webis-logo.png' | relative_url }}" alt="Webis Logo" class="uk-logo"> Webis.de</a>
-                </li>
+                        <a href="{{ '/' | relative_url }}">Argmining 2019 Overview</a>
+                    </li>
             </ul>
         </div>
 
@@ -95,16 +121,11 @@
 {{ content }}
 </div>
 
-<footer class="uk-section uk-section-muted footer-section">
+<footer class="footer-section">
     <div class="uk-container">
-        <div class="uk-grid uk-grid-small" data-uk-grid>
-        </div>
-
         <div class="uk-align-right@m uk-margin-top">
             Copyright &copy; {{site.time | date: '%Y'}} Webis Group <span class="uk-padding-small">&bullet;</span>
             <a href="#">Contact</a> <span class="uk-padding-small">&bullet;</span>
-            <a href="#">Privacy</a> <span class="uk-padding-small">&bullet;</span>
-            <a href="#">Legal Info / Impressum</a>
         </div>
     </div>
 </footer>

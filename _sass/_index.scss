@@ -3,7 +3,7 @@
 .index-main-cover {
     background: $global-secondary-background url("../img/index-cover-optimized.jpg") no-repeat center center fixed;
     background-size: cover;
-    height: 450px;
+    height: 250px;
     font-size: 2rem;
 
     h1 {
@@ -30,21 +30,6 @@
 
 @media (min-width: $breakpoint-medium) {
     .index-main-cover {
-        height: 50vh;
+       // height: 50vh;
     }
 }
-
-//.name {
-//    font-weight: lighter;
-//}
-//
-//.people {
-//    .uk-card-body {
-//        padding: 7px;
-//        text-align: center;
-//    }
-//}
-//
-//.people-university {
-//    text-transform: $nav-header-text-transform;
-//}

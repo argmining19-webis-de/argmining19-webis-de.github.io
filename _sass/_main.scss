@@ -83,15 +83,6 @@
         top: 0;
         right: -($padding-small-padding) - 1;
     }
-
-    // comment in for triangle in navigation
-    //&:before {
-    //    border-left: floor(($global-line-height * 16px + $list-margin-top) / 2) + 2 solid $global-border;
-    //    border-top: floor(($global-line-height * 16px + $list-margin-top) / 2) + 2 solid transparent;
-    //    border-bottom: floor(($global-line-height * 16px + $list-margin-top) / 2) + 2 solid transparent;
-    //    top: -1px;
-    //    right: -($padding-small-padding) - 2;
-    //}
 }
 
 .nav-right-open-sub {
