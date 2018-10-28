@@ -24,7 +24,7 @@
     <div class="cover-background-fade"></div>
     <div class="uk-container uk-position-bottom uk-light uk-padding">
         <h1>6th Workshop on Argument Mining</h1>
-        <h2>EMNLP 2019</h2>
+        <h2></h2> <!-- add here hosting conference-->
         
     </div>
 </main>
@@ -36,9 +36,7 @@
         <!-- Mobile navigation -->
         <nav class="uk-margin-large-top">
             <ul class="uk-nav uk-nav-primary uk-nav-parent-icon" data-uk-nav>
-                    <li>
-                            <a target="_blank" href="https://webis.de"><img src="{{ '/img/webis-logo.png' | relative_url }}" alt="Webis Logo" class="uk-logo"> Webis.de</a>
-                    </li>
+                   
                 <li{% if page.nav_active == "index" %} class="uk-active"{% endif %}>
                         <a href="{{ '/' | relative_url }}">Argmining 2019 Overview</a>
                     </li>
@@ -60,7 +58,9 @@
                     <a href="{{ '/acl-anti-harassement.html' | relative_url }}">Policy</a>
                 </li>
 
-               
+               <li class="uk-position-bottom uk-padding">
+                    <a target="_blank" href="https://webis.de"><img src="{{ '/img/webis-logo.png' | relative_url }}" alt="Webis Logo" class="uk-logo"> Webis.de</a>
+            </li>
             </ul>
         </nav>
     </div>
@@ -71,9 +71,7 @@
     <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-light" data-uk-navbar="mode: click">
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
-                <li>
-                        <a target="_blank" href="https://webis.de"><img src="{{ '/img/webis-logo.png' | relative_url }}" alt="Webis Logo" class="uk-logo"> Webis.de</a>
-                </li>
+                
                 <li{% if page.nav_active == "index" %} class="uk-active"{% endif %}>
                         <a href="{{ '/' | relative_url }}">Argmining 2019 Overview</a>
                     </li>
@@ -93,6 +91,9 @@
                 </li>
                 <li{% if page.nav_active == "acl-anti-harassement" %} class="uk-active"{% endif %}>
                     <a href="{{ '/acl-anti-harassement.html' | relative_url }}">Policy</a>
+                </li>
+                <li class="uk-position-right">
+                        <a target="_blank" href="https://webis.de"><img src="{{ '/img/webis-logo.png' | relative_url }}" alt="Webis Logo" class="uk-logo"> Webis.de</a>
                 </li>
             </ul>
         </div>
@@ -125,7 +126,7 @@
     <div class="uk-container">
         <div class="uk-align-right@m uk-margin-top">
             Copyright &copy; {{site.time | date: '%Y'}} Webis Group <span class="uk-padding-small">&bullet;</span>
-            <a href="#">Contact</a> <span class="uk-padding-small">&bullet;</span>
+            <a href="mailto:henningw@upb.de,benno.stein@uni-weimar.de?subject=[Argmining 2019]">Contact Us</a> <span class="uk-padding-small">&bullet;</span>
         </div>
     </div>
 </footer>
