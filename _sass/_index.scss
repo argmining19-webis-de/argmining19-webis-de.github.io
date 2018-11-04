@@ -33,19 +33,19 @@ html {
 
 @media (max-width: 400px) {
     .index-main-cover {
-        height: 250px;
+        height: 400px;
     }
 }
 
 @media (max-width: 300px) {
     .index-main-cover {
-        height: 250px;
+        height: 400px;
     }
 }
 
 @media (min-width: $breakpoint-medium) {
     .index-main-cover {
-        height: 25vh;
+        height: 35vh;
     }
 }
 
