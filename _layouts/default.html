@@ -20,14 +20,7 @@
 
 
 
-<main class="uk-section uk-cover-container index-main-cover">
-    <div class="cover-background-fade"></div>
-    <div class="uk-container uk-position-bottom uk-light uk-padding">
-            <h1>ArgMining 2019</h1><h1>The 6th International Workshop on Argument Mining</h1>
-            <h2>Collocated with <a class="title-link" href="http://www.acl2019.org/EN/index.xhtml" target="blank">ACL 2019</a> in Florence, Italy</h2>
-        
-    </div>
-</main>
+
         
 <div id="offcanvas-nav" class="uk-hidden@m" data-uk-offcanvas="overlay: true; flip: true;">
     <div class="uk-offcanvas-bar">
@@ -40,6 +33,9 @@
                 <li{% if page.nav_active == "index" %} class="uk-active"{% endif %}>
                         <a href="{{ '/' | relative_url }}">Argmining 2019</a>
                     </li>
+                <li{% if page.nav_active == "call-for-papers" %} class="uk-active"{% endif %}>
+                    <a href="{{ '/call-for-papers.html' | relative_url }}">Call for Papers</a>
+                </li>
                 <li{% if page.nav_active == "important-dates" %} class="uk-active"{% endif %}>
                     <a href="{{ '/important-dates.html' | relative_url }}">Dates</a>
                 </li>
@@ -75,7 +71,9 @@
                 <li{% if page.nav_active == "index" %} class="uk-active"{% endif %}>
                         <a href="{{ '/' | relative_url }}">Argmining 2019</a>
                     </li>
-                
+                <li{% if page.nav_active == "call-for-papers" %} class="uk-active"{% endif %}>
+                    <a href="{{ '/call-for-papers.html' | relative_url }}">Call for Papers</a>
+                </li>
                 <li{% if page.nav_active == "important-dates" %} class="uk-active"{% endif %}>
                     <a href="{{ '/important-dates.html' | relative_url }}">Dates</a>
                 </li>
@@ -118,10 +116,21 @@
     </div>
 </div>
 
-<div data-uk-height-viewport="expand: true">
-{{ content }}
-</div>
 
+<main class="uk-section uk-cover-container index-main-cover">
+    <div class="cover-background-fade"></div>
+    <div class="uk-container uk-position-bottom uk-light uk-padding">
+            <h1>ArgMining 2019</h1><h1>The 6th International Workshop on Argument Mining</h1>
+            <h2>Collocated with <a class="title-link" href="http://www.acl2019.org/EN/index.xhtml" target="blank">ACL 2019</a> in Florence, Italy</h2>
+        
+    </div>
+</main>
+
+<div data-uk-height-viewport="expand: true">
+    {{ content }}
+    </div>
+
+    
 <footer class="footer-section">
     <div class="uk-container">
         <div class="uk-align-right@m uk-margin-top">
