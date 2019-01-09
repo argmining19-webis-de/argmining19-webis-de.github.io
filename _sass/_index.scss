@@ -10,7 +10,7 @@ html {
 .index-main-cover {
 
     background-size: cover   ;
-    height: 260px;
+    height: 290px;//260px;
 
     background-color: $global-secondary-background;
     background-image: url("../img/cover-img-resized.jpg");
@@ -34,13 +34,13 @@ html {
 }
 @media (max-width: 600px) {
     .index-main-cover {
-        height: 305px;
+        height: 405px; //305px;
     }
 }
 
 @media (max-width: 400px) {
     .index-main-cover {
-        height: 465px;
+        height: 505px;//465px;
     }
 }
 
