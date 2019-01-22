@@ -30,9 +30,9 @@
         <nav class="uk-margin-large-top">
             <ul class="uk-nav uk-nav-primary uk-nav-parent-icon" data-uk-nav>
                    
-                <li{% if page.nav_active == "index" %} class="uk-active"{% endif %}>
+                <!-- <li{% if page.nav_active == "index" %} class="uk-active"{% endif %}>
                         <a href="{{ '/' | relative_url }}">Argmining 2019</a>
-                    </li>
+                    </li> -->
                 <li{% if page.nav_active == "call-for-papers" %} class="uk-active"{% endif %}>
                     <a href="{{ '/call-for-papers.html' | relative_url }}">Call for Papers</a>
                 </li>
@@ -65,34 +65,39 @@
 <div class="uk-background-secondary global-nav uk-visible@m" data-uk-sticky="media: @m">
     <!-- Desktop navigation -->
     <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-light" data-uk-navbar="mode: click">
-        <div class="uk-navbar-left">
+        
+            <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                            <li{% if page.nav_active == "index" %} class="uk-active"{% endif %}>
+                                    <a href="{{ '/' | relative_url }}">Argmining 2019</a>
+                                </li>
+                    </ul>
+            </div>
+        
+        
+        <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
                 
-                <li{% if page.nav_active == "index" %} class="uk-active"{% endif %}>
-                        <a href="{{ '/' | relative_url }}">Argmining 2019</a>
-                    </li>
+                
                 <li{% if page.nav_active == "call-for-papers" %} class="uk-active"{% endif %}>
                     <a href="{{ '/call-for-papers.html' | relative_url }}">Call for Papers</a>
                 </li>
                 <li{% if page.nav_active == "important-dates" %} class="uk-active"{% endif %}>
                     <a href="{{ '/important-dates.html' | relative_url }}">Dates</a>
                 </li>
-                
-                <li{% if page.nav_active == "program" %} class="uk-active"{% endif %}>
+                <li class="nav-group-start{% if page.nav_active == 'program' %} uk-active{% endif %}">
                     <a href="{{ '/program.html' | relative_url }}">Program</a>
                 </li>
                 <li{% if page.nav_active == "organizing-committee" %} class="uk-active"{% endif %}>
                     <a href="{{ '/organizing-committee.html' | relative_url }}">Committee</a>
                 </li>
-                <li{% if page.nav_active == "past-workshops" %} class="uk-active"{% endif %}>
+                <li class="nav-group-start{% if page.nav_active == 'past-workshops' %} uk-active{% endif %}">
                     <a href="{{ '/past-workshops.html' | relative_url }}">Past Workshops</a>
                 </li>
                 <li{% if page.nav_active == "acl-anti-harassement" %} class="uk-active"{% endif %}>
                     <a href="{{ '/acl-anti-harassement.html' | relative_url }}">Policy</a>
                 </li>
-                <li class="uk-position-small uk-position-center-right">
-                        <a target="_blank" href="https://webis.de"> Webis.de</a>
-                </li>
+               
             </ul>
         </div>
     </nav>
@@ -134,7 +139,8 @@
 <footer class="footer-section">
     <div class="uk-container">
         <div class="uk-align-right@m uk-margin-top">
-            Copyright &copy; {{site.time | date: '%Y'}} Webis Group <span class="uk-padding-small">&bullet;</span>
+                <a href="https://webis.de/" target="_blank">Copyright &copy; {{site.time | date: '%Y'}} Webis Group</a>
+                <span class="uk-padding-small">&bullet;</span>
             <a href="mailto:henningw@upb.de,benno.stein@uni-weimar.de?subject=[Argmining 2019]">Contact</a>
         </div>
     </div>
