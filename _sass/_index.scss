@@ -8,11 +8,9 @@ html {
 }
 
 .index-main-cover {
-    //background: $global-secondary-background url("../img/original.jpg") no-repeat -100px center fixed;
 
-    //background-size: cover;
     background-size: cover   ;
-    height: 250px;
+    height: 290px;//260px;
 
     background-color: $global-secondary-background;
     background-image: url("../img/cover-img-resized.jpg");
@@ -31,15 +29,18 @@ html {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.85) 85%);
 }
 
-@media (max-width: 400px) {
+.title-link {
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
     .index-main-cover {
-        height: 400px;
+        height: 405px; //305px;
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
     .index-main-cover {
-        height: 400px;
+        height: 505px;//465px;
     }
 }
 
