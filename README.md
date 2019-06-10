@@ -16,4 +16,4 @@ website. If the source files change, the server will automatically recompile
 them. The server can be stopped via `Ctrl+C`.
 
 To publish changes to the source files, just push them to GitHub, which will
-take care of compiling them on its own.
+take care of compiling them on its own. The website is reachable on: https://argmining19.webis.de
