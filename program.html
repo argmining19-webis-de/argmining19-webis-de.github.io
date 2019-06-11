@@ -8,12 +8,19 @@ description: Program
 <main class="uk-section uk-section-default">
 
     <div class="uk-container">
-        <h1>Program</h1>
+            <h1>Program</h1>
+            <ul class="uk-list">
+            <li><span data-uk-icon="chevron-down"></span> <a href="#schedule">Schedule</a></li>
+            <li><span data-uk-icon="chevron-down"></span> <a href="#keynote-speakers">Keynote Speakers</a></li>
+            <li><span data-uk-icon="chevron-down"></span> <a href="#best-paper-award">Best Paper Award</a></li></ul>
+           
+
         <hr>
+        <h2 id="schedule">Schedule</h2>
         {% include_relative schedule.html %}
         <!-- <p>ArgMining 2019 is a full-day workshop, including seven oral and 13 poster presentations (including one demo), a keynote, a best paper award, and a special event.  Details on the schedule soon.</p> -->
         <hr>
-        <h2>Joint Keynote Speakers: <a href="https://giovannisartor.net" target="blank">Giovanni Sartor</a> and <a href="http://www.agentgroup.unimore.it/Lippi/" target="blank">Marco Lippi</a></h2>
+        <h2 id="keynote-speakers">Joint Keynote Speakers: <a href="https://giovannisartor.net" target="blank">Giovanni Sartor</a> and <a href="http://www.agentgroup.unimore.it/Lippi/" target="blank">Marco Lippi</a></h2>
         <div class="uk-section-xsmall" uk-grid>
                 <div class="uk-width-small uk-padding-remove-top">
                     <img data-src="img/sartor.jpg" alt="Giovanni Sartor" uk-img>
@@ -37,7 +44,7 @@ description: Program
                         </p>
                     </div>
                 </div>
-        <h2>Best Paper Award sponsored by <a href="https://www.ibm.com" target="_blank">IBM</a></h2>
+        <h2 id="best-paper-award" >Best Paper Award sponsored by <a href="https://www.ibm.com" target="_blank">IBM</a></h2>
         <div class="uk-section-xsmall" uk-grid>
             <div class="uk-width-small uk-padding-remove-top">
                 <img data-src="img/ibm-logo.png" alt="IBM" uk-img>
